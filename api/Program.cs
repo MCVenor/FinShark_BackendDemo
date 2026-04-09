@@ -8,7 +8,11 @@ var builder = WebApplication.CreateBuilder(args);
 //8762840094
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+
+
+
 builder.Services.AddOpenApi();
+builder.Services.AddControllers();
 //builder.Services.AddSwaggerGen(); 
 
 
@@ -24,14 +28,17 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi(); // Creates the /openapi/v1.json file
-    
-    // app.UseSwaggerUI(options =>
-    // {
-    //     // POINT THE UI TO THE NEW FILE LOCATION
-    //     options.SwaggerEndpoint("/openapi/v1.json", "My API V1");
-    // });
+
+    app.UseSwaggerUI(options =>
+    {
+        // POINT THE UI TO THE NEW FILE LOCATION
+        options.SwaggerEndpoint("/openapi/v1.json", "My API V1");
+    });
 }
 
 
 app.UseHttpsRedirection();
+
+app.MapControllers();
+
 app.Run();
