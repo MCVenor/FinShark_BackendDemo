@@ -1,0 +1,12 @@
+C:\Users\Michi-Pc\Desktop\FinShark\api\my-publish-folder\api.exe
+C:\Users\Michi-Pc\Desktop\FinShark\api\my-publish-folder\appsettings.Development.json
+C:\Users\Michi-Pc\Desktop\FinShark\api\my-publish-folder\appsettings.json
+C:\Users\Michi-Pc\Desktop\FinShark\api\my-publish-folder\api.dll
+C:\Users\Michi-Pc\Desktop\FinShark\api\my-publish-folder\api.deps.json
+C:\Users\Michi-Pc\Desktop\FinShark\api\my-publish-folder\api.runtimeconfig.json
+C:\Users\Michi-Pc\Desktop\FinShark\api\my-publish-folder\api.pdb
+C:\Users\Michi-Pc\Desktop\FinShark\api\my-publish-folder\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Michi-Pc\Desktop\FinShark\api\my-publish-folder\Microsoft.OpenApi.dll
+C:\Users\Michi-Pc\Desktop\FinShark\api\my-publish-folder\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Michi-Pc\Desktop\FinShark\api\my-publish-folder\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Michi-Pc\Desktop\FinShark\api\my-publish-folder\Swashbuckle.AspNetCore.SwaggerUI.dll
