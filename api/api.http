@@ -13,7 +13,7 @@ POST {{api_HostAddress}}/api/stock
 Content-Type: application/json
 
 {
-  "symbol": "MSFT",
+  "symbol": "BLAT",
   "companyName": "Microsoft Corporation",
   "purchase": 420.50,
   "lastDiv": 0.75,
@@ -23,7 +23,7 @@ Content-Type: application/json
 
 ###
 
-PUT {{api_HostAddress}}/api/stock/6
+PUT {{api_HostAddress}}/api/stock/199
 Content-Type: application/json
 
 {
@@ -36,5 +36,11 @@ Content-Type: application/json
 }
 
 ###
-DELETE {{api_HostAddress}}/api/stock/6
+DELETE {{api_HostAddress}}/api/stock/8
 Accept: application/json
+
+###
+GET {{api_HostAddress}}/api/comment
+Accept: application/json
+
+###
