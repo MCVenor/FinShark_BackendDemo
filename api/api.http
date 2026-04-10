@@ -4,6 +4,10 @@ GET {{api_HostAddress}}/api/stock
 Accept: application/json
 
 ###
+GET {{api_HostAddress}}/api/stock/7
+Accept: application/json
+
+###
 
 POST {{api_HostAddress}}/api/stock
 
@@ -41,6 +45,11 @@ Accept: application/json
 
 ###
 GET {{api_HostAddress}}/api/comment
+Accept: application/json
+
+###
+
+GET {{api_HostAddress}}/api/comment/1
 Accept: application/json
 
 ###
