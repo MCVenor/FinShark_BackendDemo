@@ -13,7 +13,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddOpenApi();
 builder.Services.AddControllers();
-//builder.Services.AddSwaggerGen(); 
 
 
 builder.Services.AddDbContext<ApplicationDBContext>(options =>
@@ -28,12 +27,6 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi(); // Creates the /openapi/v1.json file
-
-    app.UseSwaggerUI(options =>
-    {
-        // POINT THE UI TO THE NEW FILE LOCATION
-        options.SwaggerEndpoint("/openapi/v1.json", "My API V1");
-    });
 }
 
 

@@ -1,6 +1,40 @@
 @api_HostAddress = http://localhost:5205
 
-GET {{api_HostAddress}}/weatherforecast/
+GET {{api_HostAddress}}/api/stock
 Accept: application/json
 
 ###
+
+POST {{api_HostAddress}}/api/stock
+
+###
+
+POST {{api_HostAddress}}/api/stock
+Content-Type: application/json
+
+{
+  "symbol": "MSFT",
+  "companyName": "Microsoft Corporation",
+  "purchase": 420.50,
+  "lastDiv": 0.75,
+  "industry": "Software",
+  "marketCap": 3100000000000
+}
+
+###
+
+PUT {{api_HostAddress}}/api/stock/5
+Content-Type: application/json
+
+{
+  "symbol": "NFT",
+  "companyName": "BOB Corporation",
+  "purchase": 237.99,
+  "lastDiv": 4.75,
+  "industry": "Software",
+  "marketCap": 345345
+}
+
+###
+DELETE {{api_HostAddress}}/api/stock/6
+Accept: application/json
