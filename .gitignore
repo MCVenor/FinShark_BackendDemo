@@ -480,3 +480,5 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+/api/DB/finshark.sqlite-shm
+/api/DB/finshark.sqlite-wal

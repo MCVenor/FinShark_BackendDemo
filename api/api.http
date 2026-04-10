@@ -23,7 +23,7 @@ Content-Type: application/json
 
 ###
 
-PUT {{api_HostAddress}}/api/stock/5
+PUT {{api_HostAddress}}/api/stock/6
 Content-Type: application/json
 
 {
