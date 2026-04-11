@@ -4,7 +4,7 @@ GET {{api_HostAddress}}/api/stock
 Accept: application/json
 
 ###
-GET {{api_HostAddress}}/api/stock?companyName=M
+GET {{api_HostAddress}}/api/stock?sortby=SymbOl
 Accept: application/json
 
 ###
@@ -35,7 +35,7 @@ PUT {{api_HostAddress}}/api/stock/25
 Content-Type: application/json
 
 {
-  "symbol": "NFT",
+  "symbol": "AAT",
   "companyName": "BOB Corp",
   "purchase": 237.99,
   "lastDiv": 4.75,
