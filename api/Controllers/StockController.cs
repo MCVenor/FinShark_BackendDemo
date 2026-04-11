@@ -5,6 +5,7 @@ using System.Net.Quic;
 using System.Threading.Tasks;
 using api.Data;
 using api.Dtos.Stock;
+using api.Helpers;
 using api.Interfaces;
 using api.Mappers;
 using api.Models;
@@ -28,11 +29,13 @@ namespace api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll([FromQuery] QueryObject query)
         {
+
+
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
-            List<Stock> stock = await _stockRepo.GetAllAsync();
+            List<Stock> stock = await _stockRepo.GetAllAsync(query);
 
             IEnumerable<StockDto> stockDto = stock.Select(s => s.ToStockDto());
 

@@ -4,6 +4,10 @@ GET {{api_HostAddress}}/api/stock
 Accept: application/json
 
 ###
+GET {{api_HostAddress}}/api/stock?companyName=M
+Accept: application/json
+
+###
 GET {{api_HostAddress}}/api/stock/7
 Accept: application/json
 
