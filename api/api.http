@@ -63,3 +63,18 @@ Content-Type: application/json
   "title": "comment title3",
   "content": "this is the3 content of a comment"
 }
+
+
+###
+
+PUT {{api_HostAddress}}/api/comment/6
+Content-Type: application/json
+
+{
+  "title": "new comm title3",
+  "content": "This is so muc betterthis is the3 content of a comment"
+}
+
+###
+
+DELETE {{api_HostAddress}}/api/comment/6
