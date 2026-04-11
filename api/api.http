@@ -18,21 +18,21 @@ Content-Type: application/json
 
 {
   "symbol": "BLAT",
-  "companyName": "Microsoft Corporation",
+  "companyName": "Microsof",
   "purchase": 420.50,
-  "lastDiv": 0.75,
+  "lastDiv": 1.75,
   "industry": "Software",
-  "marketCap": 3100000000000
+  "marketCap": 310000
 }
 
 ###
 
-PUT {{api_HostAddress}}/api/stock/199
+PUT {{api_HostAddress}}/api/stock/25
 Content-Type: application/json
 
 {
   "symbol": "NFT",
-  "companyName": "BOB Corporation",
+  "companyName": "BOB Corp",
   "purchase": 237.99,
   "lastDiv": 4.75,
   "industry": "Software",
@@ -40,7 +40,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE {{api_HostAddress}}/api/stock/8
+DELETE {{api_HostAddress}}/api/stock/26
 Accept: application/json
 
 ###
@@ -49,7 +49,7 @@ Accept: application/json
 
 ###
 
-GET {{api_HostAddress}}/api/comment/1
+GET {{api_HostAddress}}/api/comment/2
 Accept: application/json
 
 ###
@@ -60,21 +60,21 @@ POST {{api_HostAddress}}/api/comment/4
 Content-Type: application/json
 
 {
-  "title": "comment title3",
+  "title": "commenjiojot title3",
   "content": "this is the3 content of a comment"
 }
 
 
 ###
 
-PUT {{api_HostAddress}}/api/comment/6
+PUT {{api_HostAddress}}/api/comment/10
 Content-Type: application/json
 
 {
-  "title": "new comm title3",
+  "title": "new cjjjomm title3",
   "content": "This is so muc betterthis is the3 content of a comment"
 }
 
 ###
 
-DELETE {{api_HostAddress}}/api/comment/6
+DELETE {{api_HostAddress}}/api/comment/10
