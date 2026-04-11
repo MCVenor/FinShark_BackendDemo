@@ -53,3 +53,13 @@ GET {{api_HostAddress}}/api/comment/1
 Accept: application/json
 
 ###
+
+###
+
+POST {{api_HostAddress}}/api/comment/4
+Content-Type: application/json
+
+{
+  "title": "comment title3",
+  "content": "this is the3 content of a comment"
+}

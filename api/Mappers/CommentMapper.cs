@@ -16,5 +16,15 @@ namespace api.Mappers
                 StockId = commentModel.StockId
             };
         }
+        public static Comment toCommentFromCreate(this CreateCommentDto commentDto, int stockId)
+        {
+            return new Comment
+            {
+                Title = commentDto.Title,
+                Content = commentDto.Content,
+                //CreatedOn = DateTime.Now, gets done initially anyway
+                StockId = stockId
+            };
+        }
     }
 }
