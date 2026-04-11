@@ -4,7 +4,7 @@ GET {{api_HostAddress}}/api/stock
 Accept: application/json
 
 ###
-GET {{api_HostAddress}}/api/stock?sortby=SymbOl&isdecsending=false
+GET {{api_HostAddress}}/api/stock?sortby=SymbOl&isdecsending=false&pagenumber=1&pagesize=12
 Accept: application/json
 
 ###
