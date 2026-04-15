@@ -90,7 +90,7 @@ POST {{api_HostAddress}}/api/account/register
 Content-Type: application/json
 
 {
-  "username": "investor444",
-  "email": "investbla@gmail.com",
-  "password": "P@ssw0rd_444"
+  "username": "investor222",
+  "email": "investbla22@gmail.com",
+  "password": "P@ssw0rd_222"
 }
