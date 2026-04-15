@@ -82,3 +82,15 @@ Content-Type: application/json
 ###
 
 DELETE {{api_HostAddress}}/api/comment/10
+
+
+###
+
+POST {{api_HostAddress}}/api/account/register
+Content-Type: application/json
+
+{
+  "username": "investor444",
+  "email": "investbla@gmail.com",
+  "password": "P@ssw0rd_444"
+}

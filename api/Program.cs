@@ -68,7 +68,7 @@ builder.Services.AddScoped<IStockRepository, StockRepository>();
 builder.Services.AddScoped<ICommentRepository, CommentRepository>();
 
 var app = builder.Build();
-
+Console.WriteLine($"Database Path: {Path.GetFullPath("DB/finshark.sqlite")}");
 //2. In your middleware section
 if (app.Environment.IsDevelopment())
 {

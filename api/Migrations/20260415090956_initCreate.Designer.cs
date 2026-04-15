@@ -11,8 +11,8 @@ using api.Data;
 namespace api.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20260411151808_Identity")]
-    partial class Identity
+    [Migration("20260415090956_initCreate")]
+    partial class initCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -44,6 +44,22 @@ namespace api.Migrations
                         .HasDatabaseName("RoleNameIndex");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "BCD2FAEA-15E4-4796-B135-33024F72EFED",
+                            ConcurrencyStamp = "E8A26399-BCDC-4DFB-8862-97E468E779A1",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        },
+                        new
+                        {
+                            Id = "5CBAF4A9-D8FB-425F-9D4E-411F84AF0D1F",
+                            ConcurrencyStamp = "C8736D83-9478-489D-8082-9C16BB58406D",
+                            Name = "User",
+                            NormalizedName = "USER"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
